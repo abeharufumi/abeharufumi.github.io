@@ -43,5 +43,9 @@ footer {
 
 #twitter i {
   font-size: 40px;
-  margin-left: auto;
+  cursor: pointer;
+}
+
+#twitter:hover {
+  opacity: .8;
 }
