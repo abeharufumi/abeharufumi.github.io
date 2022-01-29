@@ -32,38 +32,32 @@ footer {
   opacity: .8;
 }
 
-/* .info {
-  width: 800px;
+
+/* MediaCommon */
+.info {
   height: 200px;
   overflow: scroll;
-  overflow-x: auto;
-} */
+  border: 1px solid gray;
+}
 
 
 
 /* SmartPhone screen*/
-@media (min-width: 300px) {
+@media (min-width: 640px) {
   section {
     display: flex;
   }
 
   .text {
-    /* width: 100px; */
     flex: 1;
     /* background-color: green; */
   }
 
   .ranking {
-    /* flex: 1; */
     width: 350px;
     /* background-color: pink; */
   }
-
-  .info {
-    height: 200px;
-    overflow: scroll;
-    border: 1px solid gray;
-  }
+  
 }
 
 /* PC screen*/
