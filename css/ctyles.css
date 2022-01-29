@@ -42,7 +42,7 @@ footer {
 
 
 /* SmartPhone screen*/
-@media (min-width: 500px) {
+@media (min-width: 300px) {
   section {
     display: flex;
   }
