@@ -53,7 +53,7 @@ footer {
   font-size: 48px;
   line-height: 64px;
   cursor: pointer;
-  padding-right: 16px;
+  padding-right: 8px;
 }
 
 .SmartPhone-Menu #MenuIcon.hide {
@@ -71,7 +71,7 @@ footer {
   padding: 64px;
   opacity: 0;
   pointer-events: none;
-  transition: opacity .8s;
+  transition: opacity .5s;
 }
 
 .overlay ul {
