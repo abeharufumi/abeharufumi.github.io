@@ -134,13 +134,12 @@ footer {
   }
 
   .text {
+    /* 可変幅にする */
     flex: 1;
-    /* background-color: green; */
   }
 
   .ranking {
     width: 350px;
-    /* background-color: pink; */
   }
 
 }
