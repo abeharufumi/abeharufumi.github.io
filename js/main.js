@@ -16,4 +16,20 @@
     MenuIcon.classList.remove('hide');
 
   });
+
+  // IntersectionObserver API
+  const scrollOvserver = new IntersectionObserver(scrollCallback);
+  scrollOvserver.observe(document.getElementById('target'));
+
+  function scrollCallback(empties) {
+    empties.forEach(empty => {
+      if (!empty.isIntersecting) {
+        header.classList.add('scroll');
+      } else {
+        header.classList.remove('scroll')
+      }
+    });
+  };
+
+  const header = document.querySelector('header');
 }

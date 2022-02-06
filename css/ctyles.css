@@ -24,7 +24,21 @@ section {
 
 /* header */
 /* footer */
-header,
+header {
+  /* background-color: rgba(14, 13, 13, 0.562); */
+  background-color: rgb(140, 140, 140);
+  width: 100%;
+  height: 60px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  transition: background-color .5s;
+}
+
+header.scroll {
+  background-color: rgba(14, 13, 13, 0.562);
+}
+
 footer {
   background-color: rgba(14, 13, 13, 0.562);
   width: 100%;
@@ -62,6 +76,10 @@ footer {
 
 .SmartPhone-Menu #MenuIcon.hide {
   display: none;
+}
+
+.text {
+  padding-top: 60px;
 }
 
 .overlay {
@@ -136,19 +154,24 @@ footer {
 
 /* PC screen*/
 @media (min-width: 640px) {
+
+  
+  
   section {
     display: flex;
   }
-
+  
   .text {
     /* 可変幅にする */
     flex: 1;
+    padding-top: 60px;
   }
-
+  
   .SubMenu {
     width: 320px;
+    padding-top: 60px;
   }
-
+  
   .pc-menu {
     display: block;
     margin-left: auto;
