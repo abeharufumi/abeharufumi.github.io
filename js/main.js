@@ -18,18 +18,39 @@
   });
 
   // IntersectionObserver API
-  const scrollOvserver = new IntersectionObserver(scrollCallback);
-  scrollOvserver.observe(document.getElementById('target'));
+  const scrollObserver = new IntersectionObserver(scrollCallback);
+  const apperObserver = new IntersectionObserver(apperCallback);
+  scrollObserver.observe(document.getElementById('target'));
+  apperObserver.observe(document.getElementById('target'));
+  const header = document.querySelector('header');
+  const up = document.getElementById('up')
 
   function scrollCallback(empties) {
     empties.forEach(empty => {
       if (!empty.isIntersecting) {
         header.classList.add('scroll');
       } else {
-        header.classList.remove('scroll')
+        header.classList.remove('scroll');
       }
     });
-  };
+  }
 
-  const header = document.querySelector('header');
+  function apperCallback(empties) {
+    empties.forEach(empty => {
+      if (!empty.isIntersecting) {
+        up.classList.add('apper');
+      } else {
+        up.classList.remove('apper');
+      }
+    });
+  }
+
+  up.addEventListener('click', tuduri => {
+    tuduri.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+
 }

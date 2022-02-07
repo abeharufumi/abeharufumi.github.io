@@ -10,6 +10,9 @@ h1 {
 
 ul a {
   text-decoration: none;
+}
+
+a {
   color: inherit;
 }
 
@@ -37,6 +40,7 @@ header {
 
 header.scroll {
   background-color: rgba(14, 13, 13, 0.562);
+  /* color: red; */
 }
 
 footer {
@@ -150,6 +154,22 @@ footer {
 
 .pc-menu {
   display: none;
+}
+
+#up {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+#up i {
+  font-size: 32px;
+}
+
+#up.apper {
+  opacity: 1;
 }
 
 /* PC screen*/
