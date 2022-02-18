@@ -1,5 +1,9 @@
 /* common */
 
+.icon {
+  border-radius: 50%;
+}
+
 h1 {
   font-size: 24px;
   padding-left: 16px;
