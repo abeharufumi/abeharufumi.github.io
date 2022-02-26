@@ -5,9 +5,13 @@
 }
 
 .IconImg>img {
-  width: 5%;
-  height: 5%;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
+}
+
+.IconImg {
+  display: flex;
 }
 
 h1 {
