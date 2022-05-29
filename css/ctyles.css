@@ -39,9 +39,65 @@ h6 {
   margin: 0;
 }
 
+.main img {
+  width:100%
+}
+
 section {
   padding: 0 4px;
 }
+
+.products {
+  padding: 0;
+}
+
+.products ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.products li {
+  /* width: 50%; */
+  /* outline: 2px solid blue; */
+  width: calc((100% - 16px) / 2);
+}
+
+.products li img {
+  width: 100%;
+}
+
+.products li a:hover {
+  display: block;
+  opacity: .5;;
+}
+
+.products .more {
+  display: flex;
+  width: 70%;
+  line-height: 48px;
+  border: 2px solid black;
+  text-align: center;
+  margin: 32px auto 0;
+  text-decoration: none;
+}
+
+
+
+.container {
+  display: block;
+  /* outline: 2px solid red; */
+}
+
+.container h2 {
+  font-weight: normal;
+  margin: 0;
+}
+
+.container ul {
+  list-style-type: none;
+}
+
 
 .text p{
   line-height: 1.4;
@@ -57,17 +113,17 @@ section {
   padding-top: 4px;
 }
 
-.info p{
+/* .info p{
   line-height: 1.4;
   margin: 0;
   padding-bottom: 16px
-}
+} */
 
-time {
+/* time {
   margin: 0;
   padding: 0;
   border-bottom: solid 1px rgba(223, 223, 223, 0.7);
-}
+} */
 
 /* header */
 /* footer */
@@ -109,11 +165,11 @@ footer {
 
 
 /* MediaCommon */
-.info {
+/* .info {
   height: 200px;
   overflow: scroll;
   border: 1px solid gray;
-}
+} */
 
 .SmartPhone-Menu {
   margin-left: auto;
@@ -220,24 +276,44 @@ footer {
   opacity: 1;
 }
 
-/* PC screen*/
-@media (min-width: 640px) {
+.SubMenu .color {
+  /* width: 460px; */
+  /* padding: 0 120px; */
+  /* background-color: RGB(240, 255, 255); */
+  background-color: white;
+}
 
-  
-  
-  section {
+.SubMenu .back-color {
+  padding: 30px 120px;
+  background-color: RGB(240, 255, 255);
+}
+
+
+/* PC screen*/
+@media (min-width: 960px) {
+
+  .text {
     display: flex;
   }
   
-  .text {
+  .text selection {
     /* 可変幅にする */
     flex: 1;
     padding-top: 60px;
+    /* display: flex; */
+    /* display: block; */
   }
   
-  .SubMenu {
-    width: 320px;
+  .SubMenu .color {
+    width: 360px;
     padding-top: 60px;
+    /* background-color: RGB(240, 255, 255); */
+    background-color: white;
+  }
+
+  .SubMenu .back-color {
+    padding: 10px 30px;
+    background-color: RGB(240, 255, 255);
   }
   
   .pc-menu {
