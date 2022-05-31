@@ -82,6 +82,17 @@ section {
   text-decoration: none;
 }
 
+.products img {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity .3s,transform .3s;
+}
+
+.products img.fuwa {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 
 .container {
@@ -113,17 +124,20 @@ section {
   padding-top: 4px;
 }
 
-/* .info p{
-  line-height: 1.4;
-  margin: 0;
-  padding-bottom: 16px
-} */
+.animate {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity .3s, transform .3s;
+}
 
-/* time {
-  margin: 0;
-  padding: 0;
-  border-bottom: solid 1px rgba(223, 223, 223, 0.7);
-} */
+.animate.appear {
+  opacity: 1;
+  transform: none;
+}
+
+
+
+
 
 /* header */
 /* footer */
@@ -165,11 +179,7 @@ footer {
 
 
 /* MediaCommon */
-/* .info {
-  height: 200px;
-  overflow: scroll;
-  border: 1px solid gray;
-} */
+
 
 .SmartPhone-Menu {
   margin-left: auto;
@@ -277,14 +287,11 @@ footer {
 }
 
 .SubMenu .color {
-  /* width: 460px; */
-  /* padding: 0 120px; */
-  /* background-color: RGB(240, 255, 255); */
   background-color: white;
 }
 
 .SubMenu .back-color {
-  padding: 30px 120px;
+  padding: 30px 40px;
   background-color: RGB(240, 255, 255);
 }
 
@@ -300,14 +307,12 @@ footer {
     /* 可変幅にする */
     flex: 1;
     padding-top: 60px;
-    /* display: flex; */
-    /* display: block; */
+    
   }
   
   .SubMenu .color {
     width: 360px;
     padding-top: 60px;
-    /* background-color: RGB(240, 255, 255); */
     background-color: white;
   }
 
